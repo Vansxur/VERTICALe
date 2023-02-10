@@ -15,7 +15,7 @@ print("""
 print("- Get the list of Binaries")
 url = 'https://api.github.com/repos/GTFOBins/GTFOBins.github.io/contents/_gtfobins?ref=master'
 response = requests.get(url)
-print("Status = " + response)
+print("Status = " + str(response))
 data = response.json()
 filenames = []
 
